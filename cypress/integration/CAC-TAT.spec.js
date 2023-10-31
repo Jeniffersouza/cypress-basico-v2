@@ -138,5 +138,9 @@ describe('Central de Atendimento ao Cliente TAT', function() {
     cy.get('#privacy a').invoke('removeAttr', 'target').click()
   })
 
+  it.only('encontrando o gato', ()=>{
+    cy.get('#cat ').invoke('show')
+  })
+
   
 })
